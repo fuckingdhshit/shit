@@ -1,0 +1,124 @@
+local Diamond = {
+    3103569599,
+    }
+    
+    local cucumber = {
+    1858053491,
+    }
+    
+    local Raider = {
+    248841053,
+    }
+    
+    local ABC = {
+    3052999926,
+    }
+    
+    local iscool = {
+    502426587,
+    }
+    
+    local Heart = {
+    103473993,
+    }
+    
+    local Crown = { -- 👑
+    2394118222,
+    }
+    
+    local Lighting = { --⚡
+    2016942520,    
+    }
+    
+    local Ghost = { --👻
+    1125885551,
+    }
+    
+    local Lu = {
+    30759115,
+    }
+    
+    local Ke = {
+    969017656,
+    50813900,
+    1736738991,
+    }
+    
+    local Nicki = { -- // 👸
+        3106086853,
+        1800928801,
+    }
+
+    local StarLight = {
+        1745631180,
+    }
+    
+    ModIDS = {
+        1,
+        969017656,
+    }
+    
+    --\\ Don't mess with anything below this
+    function swagnames()
+        for _,Player in pairs(game:GetService('Players'):GetChildren()) do
+            if table.find(Diamond, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[💎]' .. Player.DisplayName)
+                    end
+                end
+            elseif table.find(cucumber, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🥒]' .. Player.DisplayName)
+                    end
+                end
+            elseif table.find(Nicki, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👸]' .. Player.DisplayName)
+                    end
+                end
+            elseif table.find(StarLight, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[✨]' .. Player.DisplayName)
+                    end
+                end
+            elseif table.find(Lighting, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⚡]' .. Player.DisplayName)
+                    end
+                end      
+            elseif table.find(Ghost, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[👻]' .. Player.DisplayName)
+                    end
+                end 
+            elseif table.find(ABC, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[TOTAL CLOWN!]' .. Player.DisplayName)
+                    end
+                end 
+            elseif table.find(ModIDS, Player.UserId) then
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[⭐]' .. Player.DisplayName)
+                    end
+                end
+            else
+                if Player.Character then
+                    if Player.Character.Parent.Name == 'Players' then
+                        if not Player.Character.UpperTorso:FindFirstChild('OriginalSize') then
+                            Player.Character:FindFirstChildWhichIsA('Humanoid').DisplayName = ('[🤑]' .. Player.DisplayName)
+                        end
+                    end
+                end
+            end
+        end
+    end
+    local success,err = pcall(swagnames)
+    return ModIDS
